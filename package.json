@@ -1,0 +1,33 @@
+{
+  "name": "svgmap-next",
+  "description": "Update svgmap-next is a JavaScript library that lets you easily create an interactable world map comparing customizable data for each country.",
+  "version": "2.0.2",
+  "private": false,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "source": "src/js/index.js",
+  "keywords": [
+    "svg-map",
+    "world-map",
+    "chart"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TekmiHece/nextSvgMap"
+  },
+  "devDependencies": {
+    "prettier-standard": "^16.1.0",
+    "rollup": "^1.20.3"
+  },
+  "dependencies": {
+    "svg-pan-zoom": "^3.6.1"
+  },
+  "scripts": {
+    "prettier-standard:check": "yarn run prettier-standard --check *.js **/*.js",
+    "prettier-standard:format": "yarn run prettier-standard *.js **/*.js",
+    "build": "rollup -c",
+    "dev": "rollup -wc"
+  }
+}
